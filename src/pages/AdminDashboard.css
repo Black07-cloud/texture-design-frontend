@@ -1,0 +1,145 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* LEFT IMAGE */
+.admin-left {
+  width: 50%;
+  height: 100%;
+  
+}
+
+.admin-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* RIGHT CONTENT */
+.admin-right {
+  width: 60%;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+/* TEXT */
+.admin-name {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.admin-company {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.admin-phone {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* DESCRIPTION */
+.admin-desc {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+/* BUTTON CONTAINER (optional) */
+.admin-right button {
+  width: 100%;
+  max-width: 320px;
+  padding: 14px 18px;
+  margin: 12px auto;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+/* ➕ ADD PRODUCT */
+.admin-right button:nth-of-type(1) {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.35);
+}
+
+.admin-right button:nth-of-type(1):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.45);
+}
+
+/* 🚪 LOGOUT */
+.admin-right .logout {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(239, 68, 68, 0.35);
+}
+
+.admin-right .logout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(239, 68, 68, 0.45);
+}
+
+/* 🔐 CHANGE PASSWORD */
+.admin-right button:last-of-type {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(16, 185, 129, 0.35);
+}
+
+.admin-right button:last-of-type:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.45);
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  /* Admin */
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .admin-left {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .admin-right {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .admin-name {
+    font-size: 24px;
+  }
+
+  .admin-company {
+    font-size: 20px;
+  }
+
+  .admin-phone {
+    font-size: 16px;
+  }
+  .admin-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

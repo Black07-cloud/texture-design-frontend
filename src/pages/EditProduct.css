@@ -1,0 +1,113 @@
+/* ===== Edit Product Page ===== */
+
+.edit-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card */
+.edit-form {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 25px 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Title */
+.edit-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1f2937;
+  font-size: 22px;
+}
+
+/* Inputs */
+.edit-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.edit-form input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* File input */
+.edit-form input[type="file"] {
+  padding: 8px 0;
+  border: none;
+}
+
+/* Update button */
+.edit-form button {
+  width: 100%;
+  padding: 12px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+.edit-form button:hover {
+  background: #4338ca;
+}
+
+.edit-form button:active {
+  transform: scale(0.98);
+}
+
+/* Cancel button */
+.cancel-btn {
+  margin-top: 10px;
+  background: #e5e7eb !important;
+  color: #1f2937 !important;
+}
+
+.cancel-btn:hover {
+  background: #d1d5db !important;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile friendly */
+@media (max-width: 480px) {
+  .edit-form {
+    padding: 20px 16px;
+  }
+
+  .edit-form h2 {
+    font-size: 20px;
+  }
+}
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr; /* One below another */
+  }
+}

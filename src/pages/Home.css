@@ -1,0 +1,164 @@
+/* Main container */
+.home-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #7cd399;
+  text-align: center;
+}
+
+/* Main heading */
+.main-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Sub heading */
+.home-title {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+/* Grid for Interior & Exterior */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Left & Right */
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* Admin profile */
+.admin-profile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.admin-profile img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.admin-profile p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+.reviews-section {
+  padding: 40px;
+  background: #f7f7f7;
+}
+
+.review-card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.review-card h4 {
+  font-weight: bold;
+}
+
+.review-card span {
+  font-size: 12px;
+  color: gray;
+}
+
+.stars {
+  color: #f5b301;
+  font-size: 18px;
+}
+
+.review-form {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.review-form input,
+.review-form textarea,
+.review-form select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+.delete-review {
+  margin-top: 10px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+
+  .home-container {
+    padding: 20px 12px;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .home-title {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr; /* one card per row */
+    gap: 20px;
+  }
+
+  /* Admin profile fix */
+  .admin-profile {
+    top: 10px;
+    right: 10px;
+  }
+
+  .admin-profile img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .admin-profile p {
+    font-size: 12px;
+  }
+
+  /* Reviews section */
+  .reviews-section {
+    padding: 20px 12px;
+  }
+
+  .review-card {
+    padding: 12px;
+  }
+
+  .stars {
+    font-size: 16px;
+  }
+
+  .review-form {
+    padding: 15px;
+  }
+
+  .review-form input,
+  .review-form textarea,
+  .review-form select {
+    font-size: 14px;
+  }
+}
